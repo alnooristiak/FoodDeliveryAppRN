@@ -48,6 +48,15 @@ const SignInScreen = () => {
             <FontAwesome name="google" size={24} color="orange" />
         </TouchableOpacity>
       </View>
+      {/* dont have an account */}
+      <View style={{flexDirection: 'row'}}>
+        <Text style={{fontSize: spacing[8]}}>
+            Dont Have an account?
+        </Text>
+        <Text style={{marginLeft: spacing[3], fontSize: spacing[8], color:colors.lightGreen}}>
+            Sign up
+        </Text>
+      </View>
     </View>
   )
 }
