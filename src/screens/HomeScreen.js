@@ -29,6 +29,8 @@ export default HomeScreen
 const styles = StyleSheet.create({
     scroll: {
         padding: spacing[5],
+        // alignItems: 'center',
+        // justifyContent: 'center'
     },
     searchInput: {
         width: '90%',
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: spacing[4],
         marginTop: spacing[4],
-        borderRadius: spacing[4]
+        borderRadius: spacing[4],
     },
     secondContainer: {
         // flex: 1,
