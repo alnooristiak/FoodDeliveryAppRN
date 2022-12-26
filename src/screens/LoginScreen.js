@@ -4,6 +4,7 @@ import { colors } from '../theme/colors'
 import { spacing } from '../theme/spacing'
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import HomeScreen from './HomeScreen';
 
 const LoginScreen = ({ navigation }) => {
 
@@ -28,7 +29,9 @@ const LoginScreen = ({ navigation }) => {
       </View>
       {/* btn section */}
       <View>
-        <TouchableOpacity style={styles.btn}>
+        <TouchableOpacity
+        onPress={() => navigation.navigate("HomeScreen")}
+        style={styles.btn}>
             <Text style={styles.btnText}>Sign In</Text>
         </TouchableOpacity>
       </View>

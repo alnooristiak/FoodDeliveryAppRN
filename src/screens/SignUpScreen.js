@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import { colors } from '../theme/colors'
 import { spacing } from '../theme/spacing'
