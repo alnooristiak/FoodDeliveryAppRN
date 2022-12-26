@@ -4,22 +4,47 @@ import { colors } from '../theme/colors'
 import { spacing } from '../theme/spacing'
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 
 const SignUpScreen = ({ navigation }) => {
+  const [userName, setUserName] = useState(false);
   const [email, setEmail] = useState(false);
+  const [phoneNo, setPhoneNo] = useState(false);
   const [password, setPassword] = useState(false);
+  const [confernPassword, setConfernPassword] = useState(false);
+  const [address, setAddress] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <View style={styles.container}>
       <Text style={styles.signInText}>Sign up</Text>
+
       <View style={styles.inputContainer}>
         <AntDesign name="user" size={24} color="black" />
         <TextInput style={styles.inputSec}
           onFocus={() => {
             setEmail(true)
             setPassword(false)
+          }} placeholder='Name' />
+      </View>
+
+      <View style={styles.inputContainer}>
+        <MaterialIcons name="email" size={24} color="black" />
+        <TextInput style={styles.inputSec}
+          onFocus={() => {
+            setEmail(true)
+            setPassword(false)
           }} placeholder='Enter Email' />
+      </View>
+
+      <View style={styles.inputContainer}>
+        <FontAwesome name="phone" size={24} color="green" />
+        <TextInput style={styles.inputSec}
+          onFocus={() => {
+            setEmail(true)
+            setPassword(false)
+          }} placeholder='Phone number' />
       </View>
 
       <View style={styles.inputContainer}>
@@ -33,6 +58,18 @@ const SignUpScreen = ({ navigation }) => {
         secureTextEntry={true}
         style={styles.inputSec}
         placeholder='Conferm Password' />
+      </View>
+
+      <Text>
+        Please enter your address
+      </Text>
+      <View style={styles.inputContainer}>
+        <Entypo name="location" size={24} color="black" />
+        <TextInput style={styles.inputSec}
+          onFocus={() => {
+            setEmail(true)
+            setPassword(false)
+          }} placeholder='Address' />
       </View>
 
       {/* btn section */}
