@@ -1,8 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import RootNavigation from './src/screens/RootNavigation';
-import SignInScreen from './src/screens/SignInScreen';
-import WelcomeScreen from './src/screens/WelcomeScreen';
+// import SignInScreen from './src/screens/LoginScreen';
+// import WelcomeScreen from './src/screens/WelcomeScreen';
 import { spacing } from './src/theme/spacing';
 
 export default function App() {

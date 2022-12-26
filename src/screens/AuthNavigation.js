@@ -2,8 +2,9 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomeScreen from './WelcomeScreen';
-import SignInScreen from './SignInScreen';
+import SignUpScreen from './SignUpScreen';
 import LoginScreen from './LoginScreen';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -17,8 +18,8 @@ const AuthNavigation = () => {
         component={WelcomeScreen}
         options={{headerShown:false,}}
          />
-        <Stack.Screen name="SignInScreen" component={SignInScreen} />
-        <Stack.Screen name="HLoginScreenome" component={LoginScreen} />
+        <Stack.Screen name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
     </Stack.Navigator>
   )
 }

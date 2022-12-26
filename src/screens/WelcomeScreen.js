@@ -3,7 +3,7 @@ import React from 'react'
 import { colors } from '../theme/colors'
 import { spacing } from '../theme/spacing'
 
-const WelcomeScreen = () => {
+const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.welcomtTextContainer}>
@@ -19,11 +19,18 @@ const WelcomeScreen = () => {
       {/* sign up sign in section */}
       <View  style={styles.barLine}>
         <View style={styles.inoutSec}>
-            <TouchableOpacity style={styles.btn}>
+            <TouchableOpacity 
+            style={styles.btn} 
+            onPress={()=> navigation.navigate("LoginScreen")}
+            >
                 <Text style={styles.btnText}>Sign Up</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.btn}>
-                <Text style={styles.btnText}>Sign In</Text>
+
+            <TouchableOpacity
+            onPress={()=> navigation.navigate("SignUpScreen")}
+            style={styles.btn}
+             >
+                <Text style={styles.btnText}>Log In</Text>
             </TouchableOpacity>
         </View>
       </View>
