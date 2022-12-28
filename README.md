@@ -1,1 +1,4 @@
 "# FoodDeliveryAppRN" 
+
+## expo run:android
+
